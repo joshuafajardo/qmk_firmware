@@ -20,8 +20,19 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include <stdio.h>
 
 enum custom_keycodes {
+  // Rectangle Macros
+  RCT_UP = SAFE_RANGE,
+  RCT_DWN,
+  RCT_LFT,
+  RCT_RGT,
+  RCT_FULL,
   
-}
+  // Chrome Macros
+  CM_GOLFT,
+  CM_GORGT,
+  CM_MVLFT,
+  CM_MVRGT,
+};
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT_split_3x6_3(
